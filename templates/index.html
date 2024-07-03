@@ -1,36 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OCSA HackClub</title>
-    <link rel="stylesheet" href="https://css.hackclub.com/theme.css">
-    <link rel="icon" type="image/svg" href="https://assets.hackclub.com/icon-rounded.svg">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <link rel="stylesheet" href="https://css.hackclub.com/fonts.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://css.hackclub.com/theme.css" />
+    <link
+      rel="icon"
+      type="image/svg"
+      href="https://assets.hackclub.com/icon-rounded.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <link rel="stylesheet" href="https://css.hackclub.com/fonts.css" />
+  </head>
+  <body>
     <section id="home">
-        <div class=index-color>
-            <div class="title">
-                <h1>Welcome to</h1>
-                <h1 class="hack-cool">OCSA HackClub</h1>
-                <p class="hack-cool-sub">Hack Club is a nonprofit network of high school computer science clubs and makers around the world.</p>
-                <div class="hack-cool-button">
-                    <a href="https://hackclub.com/arcade/?param=slack" class="css-nhnhcz">Join the Slack</a>
-                </div>
-            </div>
+      <div class="index-color">
+        <div class="title">
+          <h1>Welcome to</h1>
+          <h1 class="hack-cool">OCSA HackClub</h1>
+          <p class="hack-cool-sub">
+            Hack Club is a nonprofit network of high school computer science
+            clubs and makers around the world.
+          </p>
+          <div class="hack-cool-button">
+            <a
+              href="https://classroom.google.com/c/NjYwOTc5MDI1OTUz?cjc=qtas67h"
+              class="css-nhnhcz"
+              >Google Classroom</a
+            >
+            <a
+              href="https://www.instagram.com/ocsa.hackclub/"
+              class="css-nhnhcz"
+              >Instagram</a
+            >
+          </div>
         </div>
-        <div class="content-container">
-            <div class="text-content">
-                
-                <p>We are a student-led community passionate about coding and technology. Each week, we gather to learn, create, and share projects ranging from websites and apps to games.</p>
-            </div>
-            <div class="image-content">
-                <img src="{{ url_for('static', filename='photos/photo1.JPG') }}" alt="Photo 1">
-                <img src="{{ url_for('static', filename='photos/photo2.JPG') }}" alt="Photo 2">
-            </div>
+      </div>
+      <div class="content-container">
+        <div class="text-content">
+          <p>
+            We are a student-led community passionate about coding and
+            technology. Each week, we gather to learn, create, and share
+            projects ranging from websites and apps to games.
+          </p>
+
         </div>
+        <div class="image-content">
+          <img
+            src="{{ url_for('static', filename='photos/photo2.JPG') }}"
+            alt="Photo 2"
+          />
+        </div>
+      </div>
     </section>
-</body>
+  </body>
+  <a href="https://hackclub.com/">
+    <img
+    class="hackclub-logo"
+    src="https://assets.hackclub.com/flag-orpheus-top.svg"
+  />
+  </a>
+  <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <p>&copy;2024 by Jackie Li</p>
+  </footer>
 </html>
